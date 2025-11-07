@@ -26,7 +26,7 @@ export class PhysicsSystem extends System {
 
         // Calculate flight path - use parabolic effect
         const midX = (startX + this.cauldronX) / 2;
-        const midY = Math.min(startY, this.cauldronY) - 100; // 中间点往上
+        const midY = Math.min(startY, this.cauldronY) - 100;
 
         // create parabolic flight
         this.createParabolicFlight(bottle, startX, startY, midX, midY, this.cauldronX, this.cauldronY, onComplete);
